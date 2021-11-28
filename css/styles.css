@@ -128,7 +128,7 @@ img {
 .header-list,
 .header-auth-nav{
     display: flex;
-    transition: color var(--animation);
+   
 }
 .header-link,
 .header-link-current {
@@ -141,6 +141,7 @@ img {
     padding-top: 32px;
     padding-bottom: 32px;
     display: block;
+    transition: color var(--animation);
 }
 .header-auth-nav{
     margin-left: auto;
@@ -156,6 +157,7 @@ img {
     letter-spacing: 0.02em;
     display: flex;
     align-items: center;
+    transition: color var(--animation);
 }
 .header-link-current{
     color: var(--accent-color);
