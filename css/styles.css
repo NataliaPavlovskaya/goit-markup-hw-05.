@@ -201,6 +201,7 @@ img {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
 
     margin-top: 0px;
@@ -402,7 +403,7 @@ img {
     height: 92px;
 }
 .client-social-link{
-    color: var(--accent-color);
+    color: var(--icon-color);
     width: 100%;
     height: 100%;
     background: var(--primary-white-color);
@@ -415,7 +416,6 @@ img {
     cursor: pointer;
     transition:background-color var(--animation), color var(--animation)  ;
 }
-
 .client-social-list{
     display: flex;
     justify-content: center;
@@ -423,6 +423,12 @@ img {
 }
 .client-social-item + .client-social-item{
     margin-left: 30px;
+    
+}
+.client-icon{
+    width: 106px;
+    height: 60px;
+    fill: currentColor;  
 }
 
 .client-social-link:hover,
@@ -433,13 +439,10 @@ img {
 }
 .client-social-link:hover .client-icon,
 .client-social-link:focus .client-icon{
-    fill: currentColor;  
+    fill: var(--accent-color);  
 }
-.client-icon{
-    width: 106px;
-    height: 60px;
-    fill: var(--icon-color);  
-}
+
+
 /* -----------------PORTFOLIO----------------- */
 
 
@@ -524,7 +527,8 @@ img {
     0px 1px 1px 0px #0000001F;
     
 }
-.project-link:hover .project-top-text{
+.project-link:hover .project-top-text,
+.project-link:focus .project-top-text{
     transform: translateY(0);
 }
 
@@ -564,7 +568,7 @@ img {
     color: var(--primary-white-color);
     font-size: 18px;
     line-height: 1.55;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     padding-left: 24px;
     padding-top: 63px;
     padding-right: 24px;
